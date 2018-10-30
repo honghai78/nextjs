@@ -1,0 +1,46 @@
+.footer-box{
+  width: 100%;
+  padding: 100px;
+  background: #222222;
+  .footer-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    .left-box{
+      flex: 0.3;
+     span{
+       color: white;
+       line-height: 30px;
+     }
+    }
+    .mid-box{
+      flex: 0.3;
+      h3{
+        color: white;
+      }
+      span{
+        color: white;
+        line-height: 30px;
+      }
+    }
+    .right-box{
+      flex: 0.3;
+      h3{
+        color: white;
+      }
+      span{
+        color: white;
+        line-height: 30px;
+      }
+      .active{
+        font-size: 20px;
+        color: white;
+        text-decoration: underline;
+        font-weight: 700;
+      }
+      .normal{
+        cursor: pointer;
+      }
+    }
+  }
+}

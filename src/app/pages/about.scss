@@ -1,0 +1,81 @@
+.container{
+  max-width: 976px;
+  margin: auto;
+  .brand_green {
+    color: #56ccb1;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+.header-box{
+  display: flex;
+  .header-box-div-left{
+    flex: 0.5;
+    .image-header_entrance{
+      max-width: 100%;
+      position: relative;
+    }
+  }
+  .header-box-div-mid{
+    flex: 0.1;
+  }
+  .header-box-div-right{
+    padding-top: 400px;
+    flex: 0.4;
+    .section-title-default {
+      margin-bottom: .3em;
+      padding-top: .5em;
+      font-size: 39px;
+      font-weight: 400;
+      line-height: 1.5em;
+      color: #56ccb1;
+    }
+    p {
+      margin-bottom: 1em;
+      font-family: 'ProximaNovaRegular' !important;
+      font-size: 19px;
+      color: #000;
+    }
+  }
+}
+.who-are-we-box{
+  width: 100%;
+  .box{
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    .box-content{
+      flex: 0.34;
+      span{
+        margin: 30px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+.meet-the-team{
+  .box{
+    max-width: 900px;
+    display: flex;
+    margin: auto;
+    .left{
+      flex: 0.3
+    }
+    .right{
+      flex: 0.7;
+    }
+  }
+}
+.our-mission{
+ .div-text{
+   max-width: 300px;
+   margin-bottom: 100px;
+   span{
+     font-family: 'GothamBookRegular'!important;
+     font-size: 19px;
+   }
+ }
+}

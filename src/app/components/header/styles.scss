@@ -1,0 +1,98 @@
+@import "../../styles/app_styles";
+.site-header {
+  background:  $primary;
+  height: 120px;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 50px;
+  border-bottom: 1px solid #2db194;
+}
+.site-header-nav {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+.medly-logo{
+  height: 75px;
+  cursor: pointer;
+}
+.navbar-collapse{
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  border-top: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: auto!important;
+  overflow: visible!important;
+}
+.main-nav{
+  float: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  li {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    display: flex;
+    float: none;
+    padding: 0 21px;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    .driver{
+      background: $primary;
+      height: 1px;
+      margin-top: 5px;
+      transition: color 0.3s ease, background 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .driver_active{
+      height: 1px;
+      margin-top: 5px;
+      background: white;
+      width: 100%
+    }
+    &:hover{
+      .driver{
+        background: white;
+        transform: scale(1.2);
+        width: 100%;
+      }
+      .link-txt{
+        transform: scale(1.2);
+      }
+    }
+  }
+  .link-txt {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fbfbfb;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+}
+.weight-light{
+  font-weight: 300 !important;
+}
+.get-start-button{
+  width: 150px!important;
+  background: white !important;
+  color: #57ccb2 !important;
+  margin-top: -20px !important;
+}
