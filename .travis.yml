@@ -8,11 +8,19 @@ branches:
 
 before_script:
 - npm install -g firebase-tools
-- npm install -g preact-cli
+- npm install -g cpx "^1.5.0"
+- npm install -g next "^7.0.2"
+- npm install -g @babel/cli "^7.1.2"
+- npm install -g @babel/core "^7.1.2"
+- npm install -g @babel/preset-env "^7.1.0"
 - npm install
 
 script:
-- preact build
+- cpx "src/public/**/*.*" "dist/public" -C
+- babel "src/functions" --out-dir "dist/functions"
+- NODE_ENV=production next build "src/app"
+- cpx "*{package.json,yarn.lock}" "dist/functions"
+- cd "dist/functions" && npm install
 
 after_success:
 - firebase deploy --token "1/IfSIPQyqPVao4UcGduzIgJwLGavYFgJXEENQM0CbsUPwXHomR-x7pgDoEOKgiyLI" --non-interactive
