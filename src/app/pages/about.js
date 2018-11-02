@@ -1,7 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
-import Link from 'next/link'
 import Layout from '../layouts'
 import './about.scss'
 import header_entrance from '../static/header_entrance.jpg'
