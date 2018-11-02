@@ -7,13 +7,10 @@ branches:
   - master
 
 before_script:
-- npm install
+- yarn
 
 script:
-- npm run preserve
-
-after_success:
-- firebase deploy --token "1/IfSIPQyqPVao4UcGduzIgJwLGavYFgJXEENQM0CbsUPwXHomR-x7pgDoEOKgiyLI" --non-interactive
+- yarn fb-deploy-app
 
 notifications:
   email:
