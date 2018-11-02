@@ -10,7 +10,7 @@ before_script:
 - yarn
 
 script:
-- yarn fb-deploy-app
+- yarn deploy-app
 
 notifications:
   email:
