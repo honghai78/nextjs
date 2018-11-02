@@ -12,15 +12,6 @@ before_script:
 script:
 - travis_wait 20 yarn deploy-app
 
-before_deploy: "echo 'Begin deploy!'"
-
-deploy:
-  provider: firebase
-  token:
-    secure: "1/WR7TNvkhAhR9z7ouRcZf3Clqow92Duvq81xPfI9LwWg"
-  project: "nextjs-66a06"
-  message: "deploy from Travis:CI"
-
 notifications:
   email:
     on_failure: change
