@@ -8,10 +8,19 @@ branches:
   - production-firebase
 
 before_script:
-- yarn
+  - yarn
 
-script: "./bin/travis_deploy.sh"
+script:
+  - yarn preserve
 
+deploy:
+  provider: script
+  script: "./bin/travis_deploy.sh"
+  skip_cleanup: true
+  on:
+    branch:
+    - staging-firebase
+    - production-firebase
 notifications:
   email:
     on_failure: change

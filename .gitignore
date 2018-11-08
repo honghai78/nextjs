@@ -86,6 +86,7 @@ jspm_packages/
 dist/
 src/app/.next
 .idea
+.firebase
 
 # Typescript v1 declaration files
 typings/

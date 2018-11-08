@@ -60,7 +60,7 @@ class Index extends React.Component {
               </h1>
               <h4>
                 <span>
-                  Medly (Travis auto deploy) delivers your prescriptions to your door for free. If you hate waiting in line, then you’ll love Medly.
+                  Medly delivers your prescriptions to your door for free. If you hate waiting in line, then you’ll love Medly.
                 </span>
               </h4>
               <p className="hp-form"></p>
