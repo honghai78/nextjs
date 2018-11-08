@@ -4,13 +4,13 @@ node_js:
 
 branches:
   only:
-  - master
+  - staging-firebase
+  - production-firebase
 
 before_script:
 - yarn
 
-script:
-- travis_wait 20 yarn deploy-app
+script: "./bin/travis_deploy.sh"
 
 notifications:
   email:

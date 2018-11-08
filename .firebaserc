@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "nextjs-66a06"
+    "staging": "medly-staging-test",
+    "production": "medly-production-test"
   }
 }
